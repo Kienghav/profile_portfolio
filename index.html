@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,7 +81,7 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600;700&display=swap');
-        
+
         .gradient-text {
             background: linear-gradient(135deg, #C9A96E 0%, #BFC8D6 50%, #8B9BAD 100%);
             background-size: 200% 200%;
@@ -89,27 +90,27 @@
             background-clip: text;
             animation: gradient-shift 4s ease-in-out infinite;
         }
-        
+
         .glass-card {
             background: rgba(26, 26, 26, 0.8);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(191, 200, 214, 0.2);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
-        
+
         .glass-nav {
             background: rgba(15, 15, 15, 0.9);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(191, 200, 214, 0.2);
         }
-        
+
         .desert-card {
             background: rgba(26, 26, 26, 0.9);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(191, 200, 214, 0.3);
             box-shadow: 0 8px 32px rgba(191, 200, 214, 0.1);
         }
-        
+
         .typing-animation {
             overflow: hidden;
             border-right: 3px solid #C9A96E;
@@ -117,14 +118,14 @@
             margin: 0 auto;
             animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
         }
-        
+
         .tech-bg {
-            background-image: 
+            background-image:
                 radial-gradient(circle at 20% 50%, rgba(201, 169, 110, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(191, 200, 214, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 40% 80%, rgba(139, 155, 173, 0.1) 0%, transparent 50%);
         }
-        
+
         .code-element {
             position: absolute;
             font-family: 'Fira Code', monospace;
@@ -133,29 +134,52 @@
             animation: code-flow 20s linear infinite;
             white-space: nowrap;
         }
-        
-        .code-element:nth-child(1) { top: 10%; animation-delay: 0s; }
-        .code-element:nth-child(2) { top: 25%; animation-delay: 5s; }
-        .code-element:nth-child(3) { top: 40%; animation-delay: 10s; }
-        .code-element:nth-child(4) { top: 55%; animation-delay: 15s; }
-        .code-element:nth-child(5) { top: 70%; animation-delay: 2s; }
-        .code-element:nth-child(6) { top: 85%; animation-delay: 7s; }
-        
+
+        .code-element:nth-child(1) {
+            top: 10%;
+            animation-delay: 0s;
+        }
+
+        .code-element:nth-child(2) {
+            top: 25%;
+            animation-delay: 5s;
+        }
+
+        .code-element:nth-child(3) {
+            top: 40%;
+            animation-delay: 10s;
+        }
+
+        .code-element:nth-child(4) {
+            top: 55%;
+            animation-delay: 15s;
+        }
+
+        .code-element:nth-child(5) {
+            top: 70%;
+            animation-delay: 2s;
+        }
+
+        .code-element:nth-child(6) {
+            top: 85%;
+            animation-delay: 7s;
+        }
+
         .skill-progress {
             transition: width 2s ease-in-out;
         }
-        
-        
+
+
         .terminal-text {
             font-family: 'Fira Code', monospace;
             color: #C9A96E;
         }
-        
+
         .nav-link {
             position: relative;
             transition: all 0.3s ease;
         }
-        
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -166,20 +190,20 @@
             background: linear-gradient(90deg, #C9A96E, #BFC8D6);
             transition: width 0.3s ease;
         }
-        
+
         .nav-link:hover::after,
         .nav-link.active::after {
             width: 100%;
         }
-        
+
         .project-card {
             transition: all 0.3s ease;
         }
-        
+
         .project-card:hover {
             transform: translateY(-5px);
         }
-        
+
         .scroll-indicator {
             position: absolute;
             bottom: 30px;
@@ -189,7 +213,7 @@
         }
 
         .hero-grid {
-            background-image: 
+            background-image:
                 linear-gradient(rgba(201, 169, 110, 0.1) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(201, 169, 110, 0.1) 1px, transparent 1px);
             background-size: 50px 50px;
@@ -214,6 +238,7 @@
     </style>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-dark-bg text-white overflow-x-hidden font-sans">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full glass-nav z-50 transition-all duration-300">
@@ -223,23 +248,29 @@
                     &lt;MY PORTFOLIO/&gt;
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link active text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
+                    <a href="#home"
+                        class="nav-link active text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
                         Home
                     </a>
-                    <a href="#about" class="nav-link text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
+                    <a href="#about"
+                        class="nav-link text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
                         About
                     </a>
-                    <a href="#skills" class="nav-link text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
+                    <a href="#skills"
+                        class="nav-link text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
                         Skills
                     </a>
-                    <a href="#projects" class="nav-link text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
+                    <a href="#projects"
+                        class="nav-link text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
                         Projects
                     </a>
-                    <a href="#contact" class="nav-link text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
+                    <a href="#contact"
+                        class="nav-link text-gray-300 hover:text-titanium-gold transition-all duration-300 font-medium">
                         Contact
                     </a>
                 </div>
-                <button class="md:hidden text-gray-300 hover:text-titanium-gold transition-colors" onclick="toggleMobileMenu()">
+                <button class="md:hidden text-gray-300 hover:text-titanium-gold transition-colors"
+                    onclick="toggleMobileMenu()">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
@@ -247,11 +278,16 @@
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden glass-card border-t border-titanium-gold/20">
             <div class="px-6 py-4 space-y-4">
-                <a href="#home" class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">Home</a>
-                <a href="#about" class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">About</a>
-                <a href="#skills" class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">Skills</a>
-                <a href="#projects" class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">Projects</a>
-                <a href="#contact" class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">Contact</a>
+                <a href="#home"
+                    class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">Home</a>
+                <a href="#about"
+                    class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">About</a>
+                <a href="#skills"
+                    class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">Skills</a>
+                <a href="#projects"
+                    class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">Projects</a>
+                <a href="#contact"
+                    class="block py-3 text-gray-300 hover:text-titanium-gold transition-colors font-medium">Contact</a>
             </div>
         </div>
     </nav>
@@ -267,76 +303,92 @@
             <div class="code-element">git commit -m "Another awesome feature deployed"</div>
             <div class="code-element">console.log('Crafting digital experiences...');</div>
         </div>
-        
+
         <!-- Grid Background -->
         <div class="absolute inset-0 hero-grid opacity-30"></div>
-        
+
         <div class="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
             <div class="text-center space-y-12 animate-fade-in">
-                
+
                 <!-- Status Badge -->
                 <div class="inline-flex items-center space-x-3 glass-card px-6 py-3 rounded-full">
                     <div class="status-indicator w-3 h-3 bg-green-500 rounded-full"></div>
                     <span class="text-desert-light font-medium text-sm">Available for new projects</span>
                 </div>
-                
+
                 <!-- Main Content -->
                 <div class="space-y-8">
                     <!-- Greeting -->
                     <div class="text-desert-titanium/80 text-lg font-mono tracking-wider">
                         &lt; Hello, I'm /&gt;
                     </div>
-                    
+
                     <!-- Name -->
                     <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-none">
                         <span class="gradient-text">Chea Kienghav</span>
                     </h1>
-                    
+
                     <!-- Title with Typing Effect -->
                     <div class="text-2xl md:text-4xl font-light text-gray-300 h-16 flex items-center justify-center">
                         <span id="typing-text" class="typing-animation font-mono"></span>
                     </div>
-                    
+
                     <!-- Description -->
                     <p class="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-                        I craft beautiful, responsive websites and web applications that deliver exceptional user experiences. 
+                        I craft beautiful, responsive websites and web applications that deliver exceptional user
+                        experiences.
                         From concept to deployment, I bring digital ideas to life.
                     </p>
                 </div>
-                
+
                 <!-- Tech Stack Icons -->
-                <div class="flex justify-center items-center space-x-8 py-8">
+                <div class="flex justify-center items-center space-x-8 py-4">
                     <div class="group">
-                        <i class="fab fa-react text-4xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
+                        <i
+                            class="fab fa-react text-4xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
                     <div class="group">
-                        <i class="fab fa-js-square text-4xl text-yellow-400 group-hover:scale-110 transition-transform duration-300"></i>
+                        <i
+                            class="fab fa-js-square text-4xl text-yellow-400 group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
                     <div class="group">
-                        <i class="fab fa-node-js text-4xl text-green-500 group-hover:scale-110 transition-transform duration-300"></i>
+                        <i
+                            class="fab fa-node-js text-4xl text-green-500 group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
                     <div class="group">
-                        <i class="fab fa-python text-4xl text-blue-500 group-hover:scale-110 transition-transform duration-300"></i>
+                        <i
+                            class="fab fa-python text-4xl text-blue-500 group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
                     <div class="group">
-                        <i class="fab fa-figma text-4xl text-purple-500 group-hover:scale-110 transition-transform duration-300"></i>
+                        <i
+                            class="fab fa-figma text-4xl text-purple-500 group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
                 </div>
-                
+
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up">
-                    <a href="#projects" class="bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg px-8 py-4 rounded-full hover:shadow-2xl hover:shadow-titanium-gold/30 transition-all duration-300 font-semibold hover:scale-105 focus:outline-none focus:ring-4 focus:ring-titanium-gold/30 group">
+                    <a href="#projects"
+                        class="bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg px-8 py-4 rounded-full hover:shadow-2xl hover:shadow-titanium-gold/30 transition-all duration-300 font-semibold hover:scale-105 focus:outline-none focus:ring-4 focus:ring-titanium-gold/30 group">
                         <i class="fas fa-laptop-code mr-2 group-hover:animate-bounce"></i>
                         View My Work
                     </a>
-                    <a href="#contact" class="border-2 border-desert-titanium/50 text-desert-titanium px-8 py-4 rounded-full hover:bg-desert-titanium/10 hover:border-desert-titanium transition-all duration-300 font-semibold hover:scale-105 focus:outline-none focus:ring-4 focus:ring-desert-titanium/30 group">
+                    <a href="#contact"
+                        class="border-2 border-desert-titanium/50 text-desert-titanium px-8 py-4 rounded-full hover:bg-desert-titanium/10 hover:border-desert-titanium transition-all duration-300 font-semibold hover:scale-105 focus:outline-none focus:ring-4 focus:ring-desert-titanium/30 group">
                         <i class="fas fa-envelope mr-2 group-hover:animate-pulse"></i>
                         Let's Connect
                     </a>
                 </div>
-                
+
+                <!-- Scroll Indicator (moved here) -->
+                <div class="flex flex-col items-center">
+                    <div class="text-desert-titanium/80 text-sm mb-2 font-medium">Explore my work</div>
+                    <div class="w-6 h-10 border-2 border-desert-titanium/60 rounded-full flex justify-center">
+                        <div class="w-1 h-3 bg-desert-titanium/60 rounded-full mt-2 animate-bounce"></div>
+                    </div>
+                </div>
+
                 <!-- Quick Stats -->
-                <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-12">
+                <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto pb-10">
                     <div class="text-center">
                         <div class="text-3xl font-bold gradient-text">50+</div>
                         <div class="text-gray-400 text-sm">Projects Completed</div>
@@ -351,14 +403,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Scroll Indicator -->
-            <div class="scroll-indicator">
+            <!-- <div class="scroll-indicator bg-blue-500">
                 <div class="text-desert-titanium/80 text-sm mb-2 font-medium">Explore my work</div>
                 <div class="w-6 h-10 border-2 border-desert-titanium/60 rounded-full flex justify-center mx-auto">
                     <div class="w-1 h-3 bg-desert-titanium/60 rounded-full mt-2 animate-bounce"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -371,23 +423,24 @@
                 </h2>
                 <div class="w-32 h-1 bg-gradient-to-r from-titanium-gold to-desert-titanium mx-auto rounded-full"></div>
             </div>
-            
+
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <!-- Profile Image -->
                 <div class="text-center lg:text-left">
                     <div class="relative inline-block">
-                        <div class="w-80 h-80 mx-auto lg:mx-0 rounded-3xl overflow-hidden border-4 border-titanium-gold/30 shadow-2xl shadow-titanium-gold/20 animate-float">
-                            <img src="./images/Picture 1.jpg" 
-                                 alt="Chea Kienghav - Website Developer" 
-                                 class="w-full h-full object-cover">
+                        <div
+                            class="w-80 h-80 mx-auto lg:mx-0 rounded-3xl overflow-hidden border-4 border-titanium-gold/30 shadow-2xl shadow-titanium-gold/20 animate-float">
+                            <img src="./images/Picture 1.jpg" alt="Chea Kienghav - Website Developer"
+                                class="w-full h-full object-cover">
                         </div>
                         <!-- Status Indicator -->
-                        <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-green-500 rounded-full border-4 border-dark-bg flex items-center justify-center">
+                        <div
+                            class="absolute -bottom-4 -right-4 w-16 h-16 bg-green-500 rounded-full border-4 border-dark-bg flex items-center justify-center">
                             <i class="fas fa-code text-white text-xl animate-pulse"></i>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- About Content -->
                 <div class="space-y-8">
                     <div class="desert-card p-8 rounded-3xl">
@@ -396,11 +449,11 @@
                             Professional Summary
                         </h3>
                         <p class="text-gray-300 leading-relaxed text-lg mb-6">
-                            Passionate Website Developer with 5+ years of experience creating stunning, 
-                            user-friendly web applications. I specialize in modern frontend frameworks, 
+                            Passionate Website Developer with 5+ years of experience creating stunning,
+                            user-friendly web applications. I specialize in modern frontend frameworks,
                             responsive design, and full-stack development to bring digital visions to life.
                         </p>
-                        
+
                         <!-- Strengths -->
                         <div class="space-y-4">
                             <div class="flex items-center text-gray-300">
@@ -421,7 +474,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Specializations -->
                     <div class="desert-card p-8 rounded-3xl">
                         <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
@@ -429,27 +482,33 @@
                             Specializations
                         </h3>
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                            <div class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
+                            <div
+                                class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
                                 <i class="fab fa-react text-3xl text-blue-400 mb-2 group-hover:animate-bounce"></i>
                                 <div class="text-sm font-semibold">React.js</div>
                             </div>
-                            <div class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
+                            <div
+                                class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
                                 <i class="fab fa-vuejs text-3xl text-green-400 mb-2 group-hover:animate-bounce"></i>
                                 <div class="text-sm font-semibold">Vue.js</div>
                             </div>
-                            <div class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
+                            <div
+                                class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
                                 <i class="fab fa-node-js text-3xl text-green-500 mb-2 group-hover:animate-bounce"></i>
                                 <div class="text-sm font-semibold">Node.js</div>
                             </div>
-                            <div class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
+                            <div
+                                class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
                                 <i class="fab fa-python text-3xl text-blue-500 mb-2 group-hover:animate-bounce"></i>
                                 <div class="text-sm font-semibold">Python</div>
                             </div>
-                            <div class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
+                            <div
+                                class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
                                 <i class="fab fa-figma text-3xl text-purple-500 mb-2 group-hover:animate-bounce"></i>
                                 <div class="text-sm font-semibold">UI/UX</div>
                             </div>
-                            <div class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
+                            <div
+                                class="text-center p-4 bg-dark-card/50 rounded-xl hover:bg-dark-card transition-colors group">
                                 <i class="fab fa-aws text-3xl text-orange-400 mb-2 group-hover:animate-bounce"></i>
                                 <div class="text-sm font-semibold">Cloud</div>
                             </div>
@@ -465,17 +524,20 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-20">
                 <h2 class="text-5xl font-extrabold text-white mb-6">
-                    <span class="text-titanium-gold">&lt;</span>Technical Skills<span class="text-titanium-gold"> /&gt;</span>
+                    <span class="text-titanium-gold">&lt;</span>Technical Skills<span class="text-titanium-gold">
+                        /&gt;</span>
                 </h2>
-                <div class="w-32 h-1 bg-gradient-to-r from-titanium-gold to-desert-titanium mx-auto rounded-full mb-8"></div>
+                <div class="w-32 h-1 bg-gradient-to-r from-titanium-gold to-desert-titanium mx-auto rounded-full mb-8">
+                </div>
                 <p class="text-xl text-gray-400 max-w-3xl mx-auto">
                     Comprehensive expertise in modern web development technologies and frameworks
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Frontend Development -->
-                <div class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-titanium-gold/20 transition-all duration-300 group">
+                <div
+                    class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-titanium-gold/20 transition-all duration-300 group">
                     <div class="text-center mb-6">
                         <i class="fas fa-laptop-code text-5xl text-titanium-gold mb-4 group-hover:animate-bounce"></i>
                         <h3 class="text-2xl font-bold text-white">Frontend Development</h3>
@@ -487,7 +549,8 @@
                                 <span class="text-titanium-gold">95%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-titanium h-2 rounded-full" style="width: 95%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-titanium h-2 rounded-full"
+                                    style="width: 95%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -496,7 +559,8 @@
                                 <span class="text-titanium-gold">90%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-titanium h-2 rounded-full" style="width: 90%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-titanium h-2 rounded-full"
+                                    style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -505,14 +569,16 @@
                                 <span class="text-titanium-gold">88%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-titanium h-2 rounded-full" style="width: 88%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-titanium h-2 rounded-full"
+                                    style="width: 88%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Backend Development -->
-                <div class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-titanium/20 transition-all duration-300 group">
+                <div
+                    class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-titanium/20 transition-all duration-300 group">
                     <div class="text-center mb-6">
                         <i class="fas fa-server text-5xl text-desert-titanium mb-4 group-hover:animate-bounce"></i>
                         <h3 class="text-2xl font-bold text-white">Backend Development</h3>
@@ -524,7 +590,8 @@
                                 <span class="text-desert-titanium">92%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-titanium-gold h-2 rounded-full" style="width: 92%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-titanium-gold h-2 rounded-full"
+                                    style="width: 92%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -533,7 +600,8 @@
                                 <span class="text-desert-titanium">85%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-titanium-gold h-2 rounded-full" style="width: 85%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-titanium-gold h-2 rounded-full"
+                                    style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -542,14 +610,16 @@
                                 <span class="text-desert-titanium">90%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-titanium-gold h-2 rounded-full" style="width: 90%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-titanium-gold h-2 rounded-full"
+                                    style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Database & Tools -->
-                <div class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-accent/20 transition-all duration-300 group">
+                <div
+                    class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-accent/20 transition-all duration-300 group">
                     <div class="text-center mb-6">
                         <i class="fas fa-database text-5xl text-desert-accent mb-4 group-hover:animate-bounce"></i>
                         <h3 class="text-2xl font-bold text-white">Database & Tools</h3>
@@ -561,7 +631,8 @@
                                 <span class="text-desert-accent">88%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-desert-titanium h-2 rounded-full" style="width: 88%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-desert-titanium h-2 rounded-full"
+                                    style="width: 88%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -570,7 +641,8 @@
                                 <span class="text-desert-accent">85%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-desert-titanium h-2 rounded-full" style="width: 85%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-desert-titanium h-2 rounded-full"
+                                    style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -579,14 +651,16 @@
                                 <span class="text-desert-accent">95%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-desert-titanium h-2 rounded-full" style="width: 95%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-desert-titanium h-2 rounded-full"
+                                    style="width: 95%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- UI/UX Design -->
-                <div class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-titanium-gold/20 transition-all duration-300 group">
+                <div
+                    class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-titanium-gold/20 transition-all duration-300 group">
                     <div class="text-center mb-6">
                         <i class="fas fa-palette text-5xl text-titanium-gold mb-4 group-hover:animate-bounce"></i>
                         <h3 class="text-2xl font-bold text-white">UI/UX Design</h3>
@@ -598,7 +672,8 @@
                                 <span class="text-titanium-gold">90%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-light h-2 rounded-full" style="width: 90%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-light h-2 rounded-full"
+                                    style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -607,7 +682,8 @@
                                 <span class="text-titanium-gold">85%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-light h-2 rounded-full" style="width: 85%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-light h-2 rounded-full"
+                                    style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -616,14 +692,16 @@
                                 <span class="text-titanium-gold">95%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-light h-2 rounded-full" style="width: 95%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-titanium-gold to-desert-light h-2 rounded-full"
+                                    style="width: 95%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Cloud & DevOps -->
-                <div class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-titanium/20 transition-all duration-300 group">
+                <div
+                    class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-titanium/20 transition-all duration-300 group">
                     <div class="text-center mb-6">
                         <i class="fas fa-cloud text-5xl text-desert-titanium mb-4 group-hover:animate-bounce"></i>
                         <h3 class="text-2xl font-bold text-white">Cloud & DevOps</h3>
@@ -635,7 +713,8 @@
                                 <span class="text-desert-titanium">80%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-desert-accent h-2 rounded-full" style="width: 80%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-desert-accent h-2 rounded-full"
+                                    style="width: 80%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -644,7 +723,8 @@
                                 <span class="text-desert-titanium">75%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-desert-accent h-2 rounded-full" style="width: 75%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-desert-accent h-2 rounded-full"
+                                    style="width: 75%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -653,14 +733,16 @@
                                 <span class="text-desert-titanium">90%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-desert-accent h-2 rounded-full" style="width: 90%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-titanium to-desert-accent h-2 rounded-full"
+                                    style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Mobile Development -->
-                <div class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-accent/20 transition-all duration-300 group">
+                <div
+                    class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-accent/20 transition-all duration-300 group">
                     <div class="text-center mb-6">
                         <i class="fas fa-mobile-alt text-5xl text-desert-accent mb-4 group-hover:animate-bounce"></i>
                         <h3 class="text-2xl font-bold text-white">Mobile Development</h3>
@@ -672,7 +754,8 @@
                                 <span class="text-desert-accent">82%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-titanium-gold h-2 rounded-full" style="width: 82%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-titanium-gold h-2 rounded-full"
+                                    style="width: 82%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -681,7 +764,8 @@
                                 <span class="text-desert-accent">75%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-titanium-gold h-2 rounded-full" style="width: 75%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-titanium-gold h-2 rounded-full"
+                                    style="width: 75%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -690,7 +774,8 @@
                                 <span class="text-desert-accent">88%</span>
                             </div>
                             <div class="w-full bg-dark-bg rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-titanium-gold h-2 rounded-full" style="width: 88%"></div>
+                                <div class="skill-progress bg-gradient-to-r from-desert-accent to-titanium-gold h-2 rounded-full"
+                                    style="width: 88%"></div>
                             </div>
                         </div>
                     </div>
@@ -704,42 +789,52 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-20">
                 <h2 class="text-5xl font-extrabold text-white mb-6">
-                    <span class="text-titanium-gold">&lt;</span>Featured Projects<span class="text-titanium-gold"> /&gt;</span>
+                    <span class="text-titanium-gold">&lt;</span>Featured Projects<span class="text-titanium-gold">
+                        /&gt;</span>
                 </h2>
-                <div class="w-32 h-1 bg-gradient-to-r from-titanium-gold to-desert-titanium mx-auto rounded-full mb-8"></div>
+                <div class="w-32 h-1 bg-gradient-to-r from-titanium-gold to-desert-titanium mx-auto rounded-full mb-8">
+                </div>
                 <p class="text-xl text-gray-400 max-w-3xl mx-auto">
                     Showcasing my latest web development projects and digital solutions
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- E-Commerce Platform -->
                 <div class="project-card desert-card rounded-3xl overflow-hidden group">
                     <div class="relative overflow-hidden">
-                        <img src="/placeholder.svg?height=250&width=400&text=E-Commerce+Platform" 
-                             alt="E-Commerce Platform" 
-                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg px-3 py-1 rounded-full text-xs font-bold">
+                        <img src="/placeholder.svg?height=250&width=400&text=E-Commerce+Platform"
+                            alt="E-Commerce Platform"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute top-4 right-4 bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg px-3 py-1 rounded-full text-xs font-bold">
                             FULL STACK
                         </div>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-titanium-gold transition-colors">Modern E-Commerce</h3>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-titanium-gold transition-colors">
+                            Modern E-Commerce</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Complete e-commerce solution with React frontend, Node.js backend, 
+                            Complete e-commerce solution with React frontend, Node.js backend,
                             payment integration, and admin dashboard. Features real-time inventory management.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-titanium-gold/20 text-titanium-gold text-xs rounded-full">React</span>
-                            <span class="px-3 py-1 bg-titanium-gold/20 text-titanium-gold text-xs rounded-full">Node.js</span>
-                            <span class="px-3 py-1 bg-titanium-gold/20 text-titanium-gold text-xs rounded-full">MongoDB</span>
-                            <span class="px-3 py-1 bg-titanium-gold/20 text-titanium-gold text-xs rounded-full">Stripe</span>
+                            <span
+                                class="px-3 py-1 bg-titanium-gold/20 text-titanium-gold text-xs rounded-full">React</span>
+                            <span
+                                class="px-3 py-1 bg-titanium-gold/20 text-titanium-gold text-xs rounded-full">Node.js</span>
+                            <span
+                                class="px-3 py-1 bg-titanium-gold/20 text-titanium-gold text-xs rounded-full">MongoDB</span>
+                            <span
+                                class="px-3 py-1 bg-titanium-gold/20 text-titanium-gold text-xs rounded-full">Stripe</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-titanium-gold hover:text-desert-light transition-colors font-medium group">
+                            <a href="#"
+                                class="text-titanium-gold hover:text-desert-light transition-colors font-medium group">
                                 <i class="fas fa-external-link-alt mr-2 group-hover:animate-bounce"></i>Live Demo
                             </a>
-                            <a href="#" class="text-titanium-gold hover:text-desert-light transition-colors font-medium group">
+                            <a href="#"
+                                class="text-titanium-gold hover:text-desert-light transition-colors font-medium group">
                                 <i class="fab fa-github mr-2 group-hover:animate-pulse"></i>Source Code
                             </a>
                         </div>
@@ -749,30 +844,38 @@
                 <!-- Portfolio Website -->
                 <div class="project-card desert-card rounded-3xl overflow-hidden group">
                     <div class="relative overflow-hidden">
-                        <img src="/placeholder.svg?height=250&width=400&text=Portfolio+Website" 
-                             alt="Portfolio Website" 
-                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-gradient-to-r from-desert-titanium to-desert-accent text-white px-3 py-1 rounded-full text-xs font-bold">
+                        <img src="/placeholder.svg?height=250&width=400&text=Portfolio+Website" alt="Portfolio Website"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute top-4 right-4 bg-gradient-to-r from-desert-titanium to-desert-accent text-white px-3 py-1 rounded-full text-xs font-bold">
                             DESIGN
                         </div>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-desert-titanium transition-colors">Creative Portfolio</h3>
+                        <h3
+                            class="text-2xl font-bold text-white mb-3 group-hover:text-desert-titanium transition-colors">
+                            Creative Portfolio</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Stunning portfolio website for a creative agency with smooth animations, 
+                            Stunning portfolio website for a creative agency with smooth animations,
                             interactive elements, and optimized performance. Built with Vue.js and GSAP.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-desert-titanium/20 text-desert-titanium text-xs rounded-full">Vue.js</span>
-                            <span class="px-3 py-1 bg-desert-titanium/20 text-desert-titanium text-xs rounded-full">GSAP</span>
-                            <span class="px-3 py-1 bg-desert-titanium/20 text-desert-titanium text-xs rounded-full">Tailwind</span>
-                            <span class="px-3 py-1 bg-desert-titanium/20 text-desert-titanium text-xs rounded-full">Figma</span>
+                            <span
+                                class="px-3 py-1 bg-desert-titanium/20 text-desert-titanium text-xs rounded-full">Vue.js</span>
+                            <span
+                                class="px-3 py-1 bg-desert-titanium/20 text-desert-titanium text-xs rounded-full">GSAP</span>
+                            <span
+                                class="px-3 py-1 bg-desert-titanium/20 text-desert-titanium text-xs rounded-full">Tailwind</span>
+                            <span
+                                class="px-3 py-1 bg-desert-titanium/20 text-desert-titanium text-xs rounded-full">Figma</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-desert-titanium hover:text-desert-light transition-colors font-medium group">
+                            <a href="#"
+                                class="text-desert-titanium hover:text-desert-light transition-colors font-medium group">
                                 <i class="fas fa-external-link-alt mr-2 group-hover:animate-bounce"></i>Live Demo
                             </a>
-                            <a href="#" class="text-desert-titanium hover:text-desert-light transition-colors font-medium group">
+                            <a href="#"
+                                class="text-desert-titanium hover:text-desert-light transition-colors font-medium group">
                                 <i class="fab fa-github mr-2 group-hover:animate-pulse"></i>Source Code
                             </a>
                         </div>
@@ -782,30 +885,37 @@
                 <!-- SaaS Dashboard -->
                 <div class="project-card desert-card rounded-3xl overflow-hidden group">
                     <div class="relative overflow-hidden">
-                        <img src="/placeholder.svg?height=250&width=400&text=SaaS+Dashboard" 
-                             alt="SaaS Dashboard" 
-                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 right-4 bg-gradient-to-r from-desert-accent to-titanium-gold text-white px-3 py-1 rounded-full text-xs font-bold">
+                        <img src="/placeholder.svg?height=250&width=400&text=SaaS+Dashboard" alt="SaaS Dashboard"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute top-4 right-4 bg-gradient-to-r from-desert-accent to-titanium-gold text-white px-3 py-1 rounded-full text-xs font-bold">
                             SAAS
                         </div>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-desert-accent transition-colors">Analytics Dashboard</h3>
+                        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-desert-accent transition-colors">
+                            Analytics Dashboard</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Comprehensive SaaS analytics dashboard with real-time data visualization, 
+                            Comprehensive SaaS analytics dashboard with real-time data visualization,
                             user management, and subscription handling. Built with React and D3.js.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-desert-accent/20 text-desert-accent text-xs rounded-full">React</span>
-                            <span class="px-3 py-1 bg-desert-accent/20 text-desert-accent text-xs rounded-full">D3.js</span>
-                            <span class="px-3 py-1 bg-desert-accent/20 text-desert-accent text-xs rounded-full">Python</span>
-                            <span class="px-3 py-1 bg-desert-accent/20 text-desert-accent text-xs rounded-full">PostgreSQL</span>
+                            <span
+                                class="px-3 py-1 bg-desert-accent/20 text-desert-accent text-xs rounded-full">React</span>
+                            <span
+                                class="px-3 py-1 bg-desert-accent/20 text-desert-accent text-xs rounded-full">D3.js</span>
+                            <span
+                                class="px-3 py-1 bg-desert-accent/20 text-desert-accent text-xs rounded-full">Python</span>
+                            <span
+                                class="px-3 py-1 bg-desert-accent/20 text-desert-accent text-xs rounded-full">PostgreSQL</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-desert-accent hover:text-desert-light transition-colors font-medium group">
+                            <a href="#"
+                                class="text-desert-accent hover:text-desert-light transition-colors font-medium group">
                                 <i class="fas fa-external-link-alt mr-2 group-hover:animate-bounce"></i>Live Demo
                             </a>
-                            <a href="#" class="text-desert-accent hover:text-desert-light transition-colors font-medium group">
+                            <a href="#"
+                                class="text-desert-accent hover:text-desert-light transition-colors font-medium group">
                                 <i class="fab fa-github mr-2 group-hover:animate-pulse"></i>Source Code
                             </a>
                         </div>
@@ -820,14 +930,17 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-20">
                 <h2 class="text-5xl font-extrabold text-white mb-6">
-                    <span class="text-titanium-gold">&lt;</span>Let's Work Together<span class="text-titanium-gold"> /&gt;</span>
+                    <span class="text-titanium-gold">&lt;</span>Let's Work Together<span class="text-titanium-gold">
+                        /&gt;</span>
                 </h2>
-                <div class="w-32 h-1 bg-gradient-to-r from-titanium-gold to-desert-titanium mx-auto rounded-full mb-8"></div>
+                <div class="w-32 h-1 bg-gradient-to-r from-titanium-gold to-desert-titanium mx-auto rounded-full mb-8">
+                </div>
                 <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                    Ready to bring your digital vision to life? Let's discuss your next project and create something amazing together.
+                    Ready to bring your digital vision to life? Let's discuss your next project and create something
+                    amazing together.
                 </p>
             </div>
-            
+
             <div class="grid lg:grid-cols-2 gap-16">
                 <!-- Contact Form -->
                 <div class="desert-card p-10 rounded-3xl">
@@ -838,29 +951,38 @@
                     <form class="space-y-6">
                         <div>
                             <label class="block text-gray-300 text-sm font-medium mb-2">Name</label>
-                            <input type="text" class="w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-xl focus:border-titanium-gold focus:outline-none focus:ring-2 focus:ring-titanium-gold/20 transition-colors text-white" placeholder="Your Name">
+                            <input type="text"
+                                class="w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-xl focus:border-titanium-gold focus:outline-none focus:ring-2 focus:ring-titanium-gold/20 transition-colors text-white"
+                                placeholder="Your Name">
                         </div>
                         <div>
                             <label class="block text-gray-300 text-sm font-medium mb-2">Email</label>
-                            <input type="email" class="w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-xl focus:border-titanium-gold focus:outline-none focus:ring-2 focus:ring-titanium-gold/20 transition-colors text-white" placeholder="your.email@example.com">
+                            <input type="email"
+                                class="w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-xl focus:border-titanium-gold focus:outline-none focus:ring-2 focus:ring-titanium-gold/20 transition-colors text-white"
+                                placeholder="your.email@example.com">
                         </div>
                         <div>
                             <label class="block text-gray-300 text-sm font-medium mb-2">Message</label>
-                            <textarea rows="6" class="w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-xl focus:border-titanium-gold focus:outline-none focus:ring-2 focus:ring-titanium-gold/20 transition-colors text-white resize-none" placeholder="Tell me about your project..."></textarea>
+                            <textarea rows="6"
+                                class="w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-xl focus:border-titanium-gold focus:outline-none focus:ring-2 focus:ring-titanium-gold/20 transition-colors text-white resize-none"
+                                placeholder="Tell me about your project..."></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg px-8 py-4 rounded-xl hover:shadow-2xl hover:shadow-titanium-gold/30 transition-all duration-300 font-semibold hover:scale-105 focus:outline-none focus:ring-4 focus:ring-titanium-gold/30">
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg px-8 py-4 rounded-xl hover:shadow-2xl hover:shadow-titanium-gold/30 transition-all duration-300 font-semibold hover:scale-105 focus:outline-none focus:ring-4 focus:ring-titanium-gold/30">
                             <i class="fas fa-paper-plane mr-2"></i>
                             Send Message
                         </button>
                     </form>
                 </div>
-                
+
                 <!-- Contact Info -->
                 <div class="space-y-8">
                     <!-- Contact Cards -->
-                    <div class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-titanium-gold/20 transition-all duration-300 group">
+                    <div
+                        class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-titanium-gold/20 transition-all duration-300 group">
                         <div class="flex items-center">
-                            <div class="bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg p-4 rounded-2xl mr-6 group-hover:scale-110 transition-transform">
+                            <div
+                                class="bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg p-4 rounded-2xl mr-6 group-hover:scale-110 transition-transform">
                                 <i class="fas fa-envelope text-2xl"></i>
                             </div>
                             <div>
@@ -869,10 +991,12 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-titanium/20 transition-all duration-300 group">
+
+                    <div
+                        class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-titanium/20 transition-all duration-300 group">
                         <div class="flex items-center">
-                            <div class="bg-gradient-to-r from-desert-titanium to-desert-accent text-white p-4 rounded-2xl mr-6 group-hover:scale-110 transition-transform">
+                            <div
+                                class="bg-gradient-to-r from-desert-titanium to-desert-accent text-white p-4 rounded-2xl mr-6 group-hover:scale-110 transition-transform">
                                 <i class="fab fa-linkedin text-2xl"></i>
                             </div>
                             <div>
@@ -881,10 +1005,12 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-accent/20 transition-all duration-300 group">
+
+                    <div
+                        class="desert-card p-8 rounded-3xl hover:shadow-xl hover:shadow-desert-accent/20 transition-all duration-300 group">
                         <div class="flex items-center">
-                            <div class="bg-gradient-to-r from-desert-accent to-titanium-gold text-white p-4 rounded-2xl mr-6 group-hover:scale-110 transition-transform">
+                            <div
+                                class="bg-gradient-to-r from-desert-accent to-titanium-gold text-white p-4 rounded-2xl mr-6 group-hover:scale-110 transition-transform">
                                 <i class="fab fa-github text-2xl"></i>
                             </div>
                             <div>
@@ -893,18 +1019,21 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Social Links -->
                     <div class="desert-card p-8 rounded-3xl">
                         <h4 class="font-bold text-white text-xl mb-6 text-center">Connect With Me</h4>
                         <div class="flex justify-center space-x-6">
-                            <a href="#" class="bg-dark-card/50 p-4 rounded-2xl text-gray-400 hover:text-titanium-gold hover:bg-dark-card transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-titanium-gold/20">
+                            <a href="#"
+                                class="bg-dark-card/50 p-4 rounded-2xl text-gray-400 hover:text-titanium-gold hover:bg-dark-card transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-titanium-gold/20">
                                 <i class="fab fa-twitter text-2xl"></i>
                             </a>
-                            <a href="#" class="bg-dark-card/50 p-4 rounded-2xl text-gray-400 hover:text-desert-titanium hover:bg-dark-card transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-desert-titanium/20">
+                            <a href="#"
+                                class="bg-dark-card/50 p-4 rounded-2xl text-gray-400 hover:text-desert-titanium hover:bg-dark-card transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-desert-titanium/20">
                                 <i class="fab fa-instagram text-2xl"></i>
                             </a>
-                            <a href="#" class="bg-dark-card/50 p-4 rounded-2xl text-gray-400 hover:text-desert-accent hover:bg-dark-card transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-desert-accent/20">
+                            <a href="#"
+                                class="bg-dark-card/50 p-4 rounded-2xl text-gray-400 hover:text-desert-accent hover:bg-dark-card transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-desert-accent/20">
                                 <i class="fab fa-dribbble text-2xl"></i>
                             </a>
                         </div>
@@ -939,7 +1068,8 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="fixed bottom-8 right-8 bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg p-4 rounded-full shadow-2xl shadow-titanium-gold/30 hover:shadow-desert-titanium/30 transition-all duration-300 transform hover:scale-110 opacity-0 pointer-events-none z-50">
+    <button id="scrollToTop"
+        class="fixed bottom-8 right-8 bg-gradient-to-r from-titanium-gold to-desert-titanium text-dark-bg p-4 rounded-full shadow-2xl shadow-titanium-gold/30 hover:shadow-desert-titanium/30 transition-all duration-300 transform hover:scale-110 opacity-0 pointer-events-none z-50">
         <i class="fas fa-arrow-up text-xl"></i>
     </button>
 
@@ -947,19 +1077,19 @@
         // Typing Animation
         const typingTexts = [
             "Website Developer",
-            "Frontend Specialist", 
+            "Frontend Specialist",
             "UI/UX Designer",
             "Full Stack Developer"
         ];
-        
+
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
         const typingElement = document.getElementById('typing-text');
-        
+
         function typeWriter() {
             const currentText = typingTexts[textIndex];
-            
+
             if (!isDeleting && charIndex < currentText.length) {
                 typingElement.textContent += currentText.charAt(charIndex);
                 charIndex++;
@@ -982,10 +1112,10 @@
         let footerIndex = 0;
         let footerCharIndex = 0;
         const footerTyping = document.getElementById('footer-typing');
-        
+
         function footerTypeWriter() {
             const currentCommand = footerCommands[footerIndex];
-            
+
             if (footerCharIndex < currentCommand.length) {
                 footerTyping.textContent += currentCommand.charAt(footerCharIndex);
                 footerCharIndex++;
@@ -1008,7 +1138,7 @@
 
         // Scroll to top
         const scrollToTopBtn = document.getElementById('scrollToTop');
-        
+
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
@@ -1018,7 +1148,7 @@
                 scrollToTopBtn.classList.remove('opacity-100');
             }
         });
-        
+
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
@@ -1036,7 +1166,7 @@
                 }
                 // Close mobile menu if open
                 document.getElementById('mobileMenu').classList.add('hidden');
-                
+
                 // Update active nav link
                 document.querySelectorAll('.nav-link').forEach(link => {
                     link.classList.remove('active');
@@ -1046,17 +1176,17 @@
         });
 
         // Initialize animations when page loads
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             setTimeout(() => {
                 typeWriter();
                 footerTypeWriter();
             }, 0);
-            
+
             // Add scroll listener for nav active states
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 const sections = document.querySelectorAll('section[id]');
                 const navLinks = document.querySelectorAll('.nav-link');
-                
+
                 let current = '';
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
@@ -1065,7 +1195,7 @@
                         current = section.getAttribute('id');
                     }
                 });
-                
+
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === `#${current}`) {
@@ -1103,4 +1233,5 @@
         });
     </script>
 </body>
+
 </html>
